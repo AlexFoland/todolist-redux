@@ -1,10 +1,12 @@
 import { ChangeEvent, KeyboardEvent, useState } from "react";
 import { ButtonComponent } from "./Button";
+import CircularProgressBar from "./CircularProgressBar";
 import {
   Box,
   Checkbox,
   List,
   ListItem,
+  Paper,
   Stack,
   TextField,
   Typography,
@@ -30,6 +32,7 @@ export const Todolist = ({
   addTask,
   changeTaskStatus,
 }: PropsType) => {
+  const [progress, setProgress] = useState(70);
   const [taskTitle, setTaskTitle] = useState("");
 
   const addTaskHandler = () => {
@@ -77,9 +80,39 @@ export const Todolist = ({
         backgroundColor: "#f5f5f5",
       }}
     >
-      <Typography variant="h4" sx={{ marginBottom: 2, color: "#1976d2" }}>
-        {title}
-      </Typography>
+      <Stack
+        direction="row"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          maxHeight: "10vh",
+          backgroundColor: "#f5f5f5",
+          paddingBottom: "30px",
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: 2,
+            color: "#1976d2",
+          }}
+        >
+          {title}
+        </Typography>
+        <Box
+          sx={{
+            paddingLeft: "50px",
+            paddingBottom: "10px",
+            backgroundColor: "rgb(255 255 255 / 0)",
+          }}
+        >
+          <CircularProgressBar value={progress} />
+        </Box>
+      </Stack>
+
       <Box display="flex" sx={{ width: "100%", marginBottom: 2 }}>
         <TextField
           label="Add new task"

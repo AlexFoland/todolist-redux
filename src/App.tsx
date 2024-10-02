@@ -70,6 +70,62 @@ function App() {
           addTask={addTask}
           changeTaskStatus={changeTaskStatus}
         />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
+        <Todolist
+          title="What to learn"
+          tasks={tasksForTodolist}
+          removeTask={removeTask}
+          changeFilter={changeFilter}
+          addTask={addTask}
+          changeTaskStatus={changeTaskStatus}
+        />
       </Box>
     </Stack>
   );
